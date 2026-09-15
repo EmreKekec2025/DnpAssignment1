@@ -1,0 +1,16 @@
+C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\RepositoryContracts\bin\Debug\net10.0\RepositoryContracts.deps.json
+C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\RepositoryContracts\bin\Debug\net10.0\RepositoryContracts.dll
+C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\RepositoryContracts\bin\Debug\net10.0\RepositoryContracts.pdb
+C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\RepositoryContracts\bin\Debug\net10.0\Entities.dll
+C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\RepositoryContracts\bin\Debug\net10.0\Entities.pdb
+C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\RepositoryContracts\obj\Debug\net10.0\RepositoryContracts.csproj.AssemblyReference.cache
+C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\RepositoryContracts\obj\Debug\net10.0\RepositoryContracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\RepositoryContracts\obj\Debug\net10.0\RepositoryContracts.AssemblyInfoInputs.cache
+C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\RepositoryContracts\obj\Debug\net10.0\RepositoryContracts.AssemblyInfo.cs
+C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\RepositoryContracts\obj\Debug\net10.0\RepositoryContracts.csproj.CoreCompileInputs.cache
+C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\RepositoryContracts\obj\Debug\net10.0\RepositoryContracts.sourcelink.json
+C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\RepositoryContracts\obj\Debug\net10.0\Reposito.28D4BA81.Up2Date
+C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\RepositoryContracts\obj\Debug\net10.0\RepositoryContracts.dll
+C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\RepositoryContracts\obj\Debug\net10.0\refint\RepositoryContracts.dll
+C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\RepositoryContracts\obj\Debug\net10.0\RepositoryContracts.pdb
+C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\RepositoryContracts\obj\Debug\net10.0\ref\RepositoryContracts.dll
