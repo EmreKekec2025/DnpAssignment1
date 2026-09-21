@@ -1,8 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "jtFfVLjGE14=",
-  "success": true,
+  "dgSpecHash": "uQdswsGGQ4o=",
+  "success": false,
   "projectFilePath": "C:\\Users\\vural\\DnpAssignment1\\DnpAssignment1\\DnpAssignment1\\Server\\CLI\\CLI.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1108",
+      "level": "Error",
+      "message": "Cycle detected. \r\n  CLI -> FileRepositories -> CLI.",
+      "projectPath": "C:\\Users\\vural\\DnpAssignment1\\DnpAssignment1\\DnpAssignment1\\Server\\CLI\\CLI.csproj",
+      "filePath": "C:\\Users\\vural\\DnpAssignment1\\DnpAssignment1\\DnpAssignment1\\Server\\CLI\\CLI.csproj",
+      "libraryId": "CLI",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }

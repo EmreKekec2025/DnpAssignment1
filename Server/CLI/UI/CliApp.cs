@@ -56,13 +56,13 @@ public class CliApp
                         running = false;
                         break;
                     default:
-                        Console.WriteLine("Invalid option, try again.");
+                        Console.WriteLine("Invalid option, try again");
                         break;
                 }
             }
             else
             {
-                Console.WriteLine("No input received, try again.");
+                Console.WriteLine("No input received, try again");
             }
         }
     }
@@ -83,7 +83,7 @@ public class CliApp
         }
         else
         {
-            Console.WriteLine("Username and password cannot be empty.");
+            Console.WriteLine("Username and password cannot be empty");
         }
     }
 
@@ -105,7 +105,7 @@ public class CliApp
         }
         else
         {
-            Console.WriteLine("Invalid input, post was not created.");
+            Console.WriteLine("Invalid input, post was not created");
         }
     }
 
@@ -136,7 +136,7 @@ public class CliApp
         IQueryable<Post> posts = postRepository.GetManyAsync();
 
         Console.WriteLine();
-        Console.WriteLine("=== Posts ===");
+        Console.WriteLine("Posts");
         foreach (Post post in posts)
         {
             Console.WriteLine($"{post.Id}: {post.Title}");
@@ -168,12 +168,12 @@ public class CliApp
             }
             else
             {
-                Console.WriteLine("Post not found.");
+                Console.WriteLine("Post not found");
             }
         }
         else
         {
-            Console.WriteLine("Invalid Post Id.");
+            Console.WriteLine("Invalid Post Id");
         }
     }
 }
