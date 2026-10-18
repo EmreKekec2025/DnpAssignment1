@@ -2,21 +2,6 @@
   "version": 4,
   "targets": {
     "net10.0": {
-      "CLI/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v10.0",
-        "dependencies": {
-          "Entities": "1.0.0",
-          "FileRepositories": "1.0.0",
-          "RepositoryContracts": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/CLI.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/CLI.dll": {}
-        }
-      },
       "Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -25,20 +10,6 @@
         },
         "runtime": {
           "bin/placeholder/Entities.dll": {}
-        }
-      },
-      "InMemoryRepositories/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v10.0",
-        "dependencies": {
-          "Entities": "1.0.0",
-          "RepositoryContracts": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/InMemoryRepositories.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/InMemoryRepositories.dll": {}
         }
       },
       "RepositoryContracts/1.0.0": {
@@ -57,20 +28,10 @@
     }
   },
   "libraries": {
-    "CLI/1.0.0": {
-      "type": "project",
-      "path": "../CLI/CLI.csproj",
-      "msbuildProject": "../CLI/CLI.csproj"
-    },
     "Entities/1.0.0": {
       "type": "project",
       "path": "../Entities/Entities.csproj",
       "msbuildProject": "../Entities/Entities.csproj"
-    },
-    "InMemoryRepositories/1.0.0": {
-      "type": "project",
-      "path": "../InMemoryRepositories/InMemoryRepositories.csproj",
-      "msbuildProject": "../InMemoryRepositories/InMemoryRepositories.csproj"
     },
     "RepositoryContracts/1.0.0": {
       "type": "project",
@@ -80,9 +41,7 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "CLI >= 1.0.0",
       "Entities >= 1.0.0",
-      "InMemoryRepositories >= 1.0.0",
       "RepositoryContracts >= 1.0.0"
     ]
   },
@@ -112,14 +71,8 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\vural\\DnpAssignment1\\DnpAssignment1\\DnpAssignment1\\Server\\CLI\\CLI.csproj": {
-              "projectPath": "C:\\Users\\vural\\DnpAssignment1\\DnpAssignment1\\DnpAssignment1\\Server\\CLI\\CLI.csproj"
-            },
             "C:\\Users\\vural\\DnpAssignment1\\DnpAssignment1\\DnpAssignment1\\Server\\Entities\\Entities.csproj": {
               "projectPath": "C:\\Users\\vural\\DnpAssignment1\\DnpAssignment1\\DnpAssignment1\\Server\\Entities\\Entities.csproj"
-            },
-            "C:\\Users\\vural\\DnpAssignment1\\DnpAssignment1\\DnpAssignment1\\Server\\InMemoryRepositories\\InMemoryRepositories.csproj": {
-              "projectPath": "C:\\Users\\vural\\DnpAssignment1\\DnpAssignment1\\DnpAssignment1\\Server\\InMemoryRepositories\\InMemoryRepositories.csproj"
             },
             "C:\\Users\\vural\\DnpAssignment1\\DnpAssignment1\\DnpAssignment1\\Server\\RepositoryContracts\\RepositoryContracts.csproj": {
               "projectPath": "C:\\Users\\vural\\DnpAssignment1\\DnpAssignment1\\DnpAssignment1\\Server\\RepositoryContracts\\RepositoryContracts.csproj"
@@ -436,16 +389,5 @@
         }
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1108",
-      "level": "Error",
-      "message": "Cycle detected. \r\n  FileRepositories -> CLI -> FileRepositories.",
-      "libraryId": "FileRepositories",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    }
-  ]
+  }
 }

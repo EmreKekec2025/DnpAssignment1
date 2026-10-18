@@ -16,9 +16,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
-          "CLI": "1.0.0",
           "Entities": "1.0.0",
-          "InMemoryRepositories": "1.0.0",
           "RepositoryContracts": "1.0.0"
         },
         "compile": {
@@ -26,20 +24,6 @@
         },
         "runtime": {
           "bin/placeholder/FileRepositories.dll": {}
-        }
-      },
-      "InMemoryRepositories/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v10.0",
-        "dependencies": {
-          "Entities": "1.0.0",
-          "RepositoryContracts": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/InMemoryRepositories.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/InMemoryRepositories.dll": {}
         }
       },
       "RepositoryContracts/1.0.0": {
@@ -67,11 +51,6 @@
       "type": "project",
       "path": "../FileRepositories/FileRepositories.csproj",
       "msbuildProject": "../FileRepositories/FileRepositories.csproj"
-    },
-    "InMemoryRepositories/1.0.0": {
-      "type": "project",
-      "path": "../InMemoryRepositories/InMemoryRepositories.csproj",
-      "msbuildProject": "../InMemoryRepositories/InMemoryRepositories.csproj"
     },
     "RepositoryContracts/1.0.0": {
       "type": "project",
@@ -433,16 +412,5 @@
         }
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1108",
-      "level": "Error",
-      "message": "Cycle detected. \r\n  CLI -> FileRepositories -> CLI.",
-      "libraryId": "CLI",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    }
-  ]
+  }
 }

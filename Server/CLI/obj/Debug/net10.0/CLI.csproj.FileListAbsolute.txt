@@ -4,11 +4,9 @@ C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\CLI\bin\Debug
 C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\CLI\bin\Debug\net10.0\CLI.dll
 C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\CLI\bin\Debug\net10.0\CLI.pdb
 C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\CLI\bin\Debug\net10.0\Entities.dll
-C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\CLI\bin\Debug\net10.0\InMemoryRepositories.dll
 C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\CLI\bin\Debug\net10.0\RepositoryContracts.dll
 C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\CLI\bin\Debug\net10.0\Entities.pdb
 C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\CLI\bin\Debug\net10.0\RepositoryContracts.pdb
-C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\CLI\bin\Debug\net10.0\InMemoryRepositories.pdb
 C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\CLI\obj\Debug\net10.0\CLI.csproj.AssemblyReference.cache
 C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\CLI\obj\Debug\net10.0\CLI.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\CLI\obj\Debug\net10.0\CLI.AssemblyInfoInputs.cache
@@ -21,3 +19,5 @@ C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\CLI\obj\Debug
 C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\CLI\obj\Debug\net10.0\CLI.pdb
 C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\CLI\obj\Debug\net10.0\CLI.genruntimeconfig.cache
 C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\CLI\obj\Debug\net10.0\ref\CLI.dll
+C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\CLI\bin\Debug\net10.0\FileRepositories.dll
+C:\Users\vural\DnpAssignment1\DnpAssignment1\DnpAssignment1\Server\CLI\bin\Debug\net10.0\FileRepositories.pdb

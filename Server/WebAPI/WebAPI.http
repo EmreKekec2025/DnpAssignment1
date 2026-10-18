@@ -1,0 +1,48 @@
+@host = http://localhost:5229
+
+### Opret bruger
+POST {{host}}/users
+Content-Type: application/json
+
+{
+  "username": "emre",
+  "password": "1234"
+}
+
+### Hent alle brugere
+GET {{host}}/users
+
+### Hent brugere med filter
+GET {{host}}/users?username=em
+
+### Hent en bruger
+GET {{host}}/users/1
+
+### Opret post
+POST {{host}}/posts
+Content-Type: application/json
+
+{
+  "title": "First post",
+  "body": "Hello world",
+  "userId": 1
+}
+
+### Hent posts med filter
+GET {{host}}/posts?title=first&userId=1
+
+### Opret kommentar
+POST {{host}}/comments
+Content-Type: application/json
+
+{
+  "body": "Nice post",
+  "postId": 1,
+  "userId": 1
+}
+
+### Hent kommentarer med filter
+GET {{host}}/comments?postId=1
+
+### Slet kommentar
+DELETE {{host}}/comments/1
