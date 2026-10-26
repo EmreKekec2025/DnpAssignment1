@@ -1,0 +1,103 @@
+@page "/posts/{Id:int}"
+@inject IPostService PostService
+@inject IUserService UserService
+@inject ICommentService CommentService
+
+@if (error is not null)
+{
+    <p style="color:red">@error</p>
+}
+else if (post is null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <h3>@post.Title</h3>
+    <p>@post.Body</p>
+    <p><em>By @authorName</em></p>
+
+    <h4>Comments</h4>
+    @if (comments.Count == 0)
+    {
+        <p>No comments yet.</p>
+    }
+    else
+    {
+        <ul>
+            @foreach (CommentDto comment in comments)
+            {
+                <li>@comment.Body <em>(by @GetUserName(comment.UserId))</em></li>
+            }
+        </ul>
+    }
+
+    <h4>Add comment</h4>
+    <textarea @bind="newComment"></textarea><br />
+    <button @onclick="AddComment">Add comment</button>
+}
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private PostDto? post;
+    private string authorName = "";
+    private List<CommentDto> comments = new();
+    private Dictionary<int, string> userNames = new();
+    private string newComment = "";
+    private string? error;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            post = await PostService.GetSingleAsync(Id);
+            authorName = await LoadUserNameAsync(post.UserId);
+            await LoadCommentsAsync();
+        }
+        catch (Exception e)
+        {
+            error = e.Message;
+        }
+    }
+
+    private async Task LoadCommentsAsync()
+    {
+        comments = await CommentService.GetCommentsForPostAsync(Id);
+        foreach (CommentDto comment in comments)
+        {
+            await LoadUserNameAsync(comment.UserId);
+        }
+    }
+
+    private async Task<string> LoadUserNameAsync(int userId)
+    {
+        if (!userNames.ContainsKey(userId))
+        {
+            UserDto user = await UserService.GetSingleAsync(userId);
+            userNames[userId] = user.Username;
+        }
+        return userNames[userId];
+    }
+
+    private string GetUserName(int userId)
+    {
+        return userNames.ContainsKey(userId) ? userNames[userId] : "unknown";
+    }
+
+    private async Task AddComment()
+    {
+        try
+        {
+            // UserId hardcoded til 1
+            await CommentService.AddCommentAsync(new CreateCommentDto { Body = newComment, PostId = Id, UserId = 1 });
+            newComment = "";
+            await LoadCommentsAsync();
+        }
+        catch (Exception e)
+        {
+            error = e.Message;
+        }
+    }
+}
